@@ -1,46 +1,66 @@
-💱 Conversor de Monedas en Java
+# 💱 Conversor de Monedas en Java
 
-Aplicación en Java que permite convertir entre diferentes monedas usando tasas de cambio en tiempo real obtenidas desde la API de ExchangeRate‑API.
+Aplicación en **Java** para convertir entre diferentes monedas usando tasas de cambio en tiempo real desde la **API de ExchangeRate‑API**.  
+El programa es de **consola interactiva**, mostrando resultados claros y precisos.
 
-El programa es de consola interactiva, donde el usuario elige la conversión que desea realizar y obtiene el resultado de forma clara.
+---
 
-🔹 Funcionalidades
+## 🔹 Funcionalidades
 
-Conversión entre monedas: Quetzales, Dólares, Reales Brasileños y Pesos Mexicanos
+- Conversión entre **USD, GTQ, BRL y MXN**  
+- Consulta de tasas de cambio en tiempo real  
+- Menú interactivo de fácil uso  
+- Uso de `HttpClient` para solicitudes HTTP  
+- Uso de `Gson` para parsear JSON de la API  
 
-Consulta de tasas de cambio en tiempo real
+---
 
-Menú interactivo en consola
-
-Uso de HttpClient y Gson para manejar la API y JSON
-
-📂 Estructura del proyecto
+## 📂 Estructura del proyecto
 src/
 ├── model/
-│   └── Moneda.java       # Representa los datos de la API
+│   └── Moneda.java        # Representa los datos de la API
 ├── service/
-│   └── Consulta_Api.java # Maneja la petición HTTP
-└── Principal.java        # Menú y lógica de conversión
+│   └── Consulta_Api.java  # Gestiona la petición HTTP
+└── Principal.java         # Menú y lógica de conversión
+
+---
+
+## 🚀 Cómo ejecutar
+
+1. Clonar el repositorio:
 
 
-🚀 Cómo ejecutar
+ git clone https://github.com/fred001-lop/currency-converter-api-java.git
 
-Clonar el repositorio:
 
-git clone https://github.com/fred001-lop/currency-converter-api-java.git
+Asegurarse de tener Java 11+ y la librería Gson en el proyecto.
 
-Agregar Gson al proyecto (Maven o .jar).
-
-Ejecutar la clase Principal.java.
-
+Ejecutar la clase Principal.java:
 javac Principal.java
 java Principal
+
 📝 Uso
 
-Al ejecutar, se mostrará un menú con las opciones de conversión.
-Luego se ingresa la cantidad y se obtiene un mensaje como:
+Al ejecutar, se mostrará un menú como este:
+
+*********************************
+Sea bienvenido/a al Conversor de Moneda
+1) Quetzales a Dólares
+2) Dólares a Quetzales
+3) Dólar a Real Brasileño
+4) Real Brasileño a Dólar
+5) Peso Mexicano a Dólar
+6) Dólar a Peso Mexicano
+7) Salir
+Elija una opcion valida:
+*********************************
+
+
+Luego se ingresa la cantidad a convertir y se obtiene un mensaje formateado:
 
 El valor 25.00 [USD] corresponde al valor final de ===> 195.00 [GTQ]
+
+
 📌 Tecnologías
 
 Java 11+
@@ -48,3 +68,14 @@ Java 11+
 HttpClient (java.net.http)
 
 Gson (para JSON)
+
+
+
+⚡ Recomendaciones
+
+Mantener la API Key en un archivo separado o variable de entorno.
+
+
+🤝 Autor
+
+Fredy Lopez – Desarrollador 
