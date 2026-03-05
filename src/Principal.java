@@ -15,16 +15,19 @@ public class Principal {
         int opcion;
 
         do {
-            System.out.println("*********************************");
-            System.out.println("Sea bienvenido/a al Conversor de Moneda");
-            System.out.println("1) Quetzales a Dólares");
-            System.out.println("2) Dólares a Quetzales");
-            System.out.println("3) Dólar a Real Brasileño");
-            System.out.println("4) Real Brasileño a Dólar");
-            System.out.println("5) Peso Mexicano a Dólar");
-            System.out.println("6) Dólar a Peso Mexicano");
-            System.out.println("7) Salir");
-            System.out.println("*********************************");
+            System.out.println(
+                    "*********************************\n" +
+                            "Sea bienvenido/a al Conversor de Moneda\n" +
+                            "1) Quetzales a Dólares\n" +
+                            "2) Dólares a Quetzales\n" +
+                            "3) Dólar a Real Brasileño\n" +
+                            "4) Real Brasileño a Dólar\n" +
+                            "5) Peso Mexicano a Dólar\n" +
+                            "6) Dólar a Peso Mexicano\n" +
+                            "7) Salir\n" +
+                            "Elija una opcion valida:\n" +
+                            "*********************************"
+            );
 
             opcion = scanner.nextInt();
             if (opcion == 7){
