@@ -21,6 +21,8 @@ src/
 ├── service/
 │   └── Consulta_Api.java # Maneja la petición HTTP
 └── Principal.java        # Menú y lógica de conversión
+
+
 🚀 Cómo ejecutar
 
 Clonar el repositorio:
